@@ -4,7 +4,119 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+/* ---- reset ---- */
+
+/*html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*/
+h1 {
+  color: #06365f;
+}
+
 body {
+  margin: 10%;
+  padding: 0;
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  background-image: url("/home/nur/Ironhack/M1/labs/lab-css-instagram-clone/images/bgtile.png");
+  background-repeat: repeat-x;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 150px 0px 0px 0px;
+}
+
+.main {
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.logo-login {
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: #1c5380;
+  height: 50px;
+  width: 100px;
+  border-radius: 4px;
+}
+
+.login-btn {
+  color: white;
+  border-style: ;
+}
+
+.article {
+  background-color: white;
+  border-image: url("/home/nur/Ironhack/M1/labs/lab-css-instagram-clone/images/frame.png");
+  background-position: 0;
+  background-repeat: no-repeat;
+  box-shadow: 0 -5px 5px -5px #333;
+  border-radius: 4px;
+}
+
+.article h1,
+p {
+  margin: 20px 10px 5px 25px;
+  padding: 0px 25px 0px 0px;
+}
+
+.app-buttons {
+  margin: 10px 10px 5px 25px;
+}
+
+footer {
+  color: #06365f;
+  padding: 60px 0;
+  text-decoration: none;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.footer-links li {
+  padding-right: 30px;
+  list-style: none;
+  font-weight: bold;
+}
+
+#copyright {
+  color: grey;
 }
